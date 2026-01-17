@@ -1,12 +1,14 @@
 ---
 name: lp-section
 description: LPにセクションを追加。hero、pain、solution、testimonials、faq、cta等。セクションを追加して、と言われたら使用。
-allowed-tools: Read, Edit, Write
+allowed-tools: Read, Edit, Write, Skill
 ---
 
 # セクション追加スキル
 
 既存のLPに新しいセクションを追加します。
+
+**重要**: デザイン作成時は `/frontend-design` スキルを使用してください。
 
 ## 対応セクション
 

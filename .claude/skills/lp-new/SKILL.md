@@ -1,12 +1,14 @@
 ---
 name: lp-new
 description: 新しいランディングページを作成。ヒアリングしてHTML/CSS/JSを生成。LPを作りたい、ランディングページを作成して、と言われたら使用。
-allowed-tools: Write, Read, Edit, Bash
+allowed-tools: Write, Read, Edit, Bash, Skill
 ---
 
 # LP新規作成スキル
 
 design/ ディレクトリに新しいランディングページを作成します。
+
+**重要**: デザイン作成時は必ず `/frontend-design` スキルを使用してください。
 
 ## ヒアリング項目
 
@@ -84,6 +86,12 @@ design/
 5. **レスポンシブ**: モバイルファースト
    - 375pxで見やすいデザイン
    - 孤立文字（1-2文字の行末）を避ける
+
+## 作成フロー
+
+1. ヒアリングで要件を確認
+2. `/frontend-design` スキルを呼び出してデザイン作成
+3. design/ に HTML/CSS/JS を出力
 
 ## 完了後の案内
 
