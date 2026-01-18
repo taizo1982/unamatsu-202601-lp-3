@@ -3,75 +3,293 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ランディングページ</title>
+  <title>近江鰻処 うな松｜テイクアウト予約</title>
+  <meta name="description" content="南草津で本格うな重をテイクアウト。厳選ニホンウナギと八代目儀兵衛ブレンド米を使用した、専門店クオリティのうな重をご自宅で。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <!-- ヘッダー -->
+  <!-- Header -->
   <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="ロゴ" class="logo">
-      <a href="#cta" class="header-cta" data-cv="header-click">お問い合わせ</a>
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/unamatsu_logo_wh.png" alt="近江鰻処 うな松" class="header__logo-img">
+      </a>
+      <a href="https://page.line.me/750yomcm?openQrModal=true" class="header__cta" data-cv="line" aria-label="LINE予約">
+        <svg class="header__cta-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+        </svg>
+        <span>LINE予約</span>
+      </a>
     </div>
   </header>
 
-  <!-- ヒーロー -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">キャッチコピーをここに</h1>
-      <p class="hero-subtitle">サブキャッチをここに入れます</p>
-      <a href="#cta" class="btn btn-primary" data-cv="hero-click">今すぐ申し込む</a>
+    <div class="hero__bg">
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__vertical-text">TAKEOUT</div>
+      <div class="hero__main">
+        <p class="hero__label">テイクアウト専門</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line">南草津で、</span>
+          <span class="hero__title-line">ちゃんと旨い鰻を、</span>
+          <span class="hero__title-line hero__title-accent">持ち帰る。</span>
+        </h1>
+        <p class="hero__subtitle">店で食べるクオリティを、そのままご自宅へ。</p>
+
+        <div class="hero__uses">
+          <span class="hero__use">お昼ご飯に</span>
+          <span class="hero__use-divider">|</span>
+          <span class="hero__use">会議のお弁当に</span>
+          <span class="hero__use-divider">|</span>
+          <span class="hero__use">週末のご褒美に</span>
+          <span class="hero__use-divider">|</span>
+          <span class="hero__use">家族で楽しむ一折</span>
+        </div>
+      </div>
+
+      <div class="hero__image-frame">
+        <img src="images/unajyu5.jpeg" alt="うな松のうな重" class="hero__image">
+        <div class="hero__image-decoration"></div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
     </div>
   </section>
 
-  <!-- 課題セクション -->
-  <section class="pain">
-    <div class="container">
-      <h2 class="section-title">こんなお悩みありませんか？</h2>
-      <ul class="pain-list">
-        <li class="pain-item">課題1をここに</li>
-        <li class="pain-item">課題2をここに</li>
-        <li class="pain-item">課題3をここに</li>
-      </ul>
+  <!-- LINE Benefits -->
+  <section class="benefits" id="line-benefits">
+    <div class="benefits__container">
+      <div class="benefits__header">
+        <span class="section-label">LINE友だち登録特典</span>
+        <h2 class="section-title">LINEで、<br>もっと便利に。</h2>
+      </div>
+
+      <div class="benefits__grid">
+        <div class="benefit-card">
+          <div class="benefit-card__number">01</div>
+          <div class="benefit-card__icon">
+            <i data-lucide="calendar-check"></i>
+          </div>
+          <h3 class="benefit-card__title">予約がスムーズ</h3>
+          <p class="benefit-card__text">24時間いつでもLINEで<br>テイクアウト予約が可能</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__number">02</div>
+          <div class="benefit-card__icon">
+            <i data-lucide="ticket-percent"></i>
+          </div>
+          <h3 class="benefit-card__title">割引クーポン配信</h3>
+          <p class="benefit-card__text">LINE限定のお得な<br>クーポンを定期配信</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card__number">03</div>
+          <div class="benefit-card__icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="benefit-card__title">スタンプ特典</h3>
+          <p class="benefit-card__text">5個貯めると無料グレードアップ<br><small>梅→竹、竹→松</small></p>
+        </div>
+      </div>
+
+      <a href="https://page.line.me/750yomcm?openQrModal=true" class="benefits__cta" data-cv="line">
+        <span class="benefits__cta-text">今すぐLINE友だち登録</span>
+        <span class="benefits__cta-arrow">→</span>
+      </a>
     </div>
   </section>
 
-  <!-- 解決策セクション -->
-  <section class="solution">
-    <div class="container">
-      <h2 class="section-title">その悩み、解決できます</h2>
-      <div class="solution-steps">
-        <div class="step">
-          <span class="step-number">1</span>
-          <h3 class="step-title">ステップ1</h3>
-          <p class="step-description">説明をここに</p>
+  <!-- Reservation Methods -->
+  <section class="reservation">
+    <div class="reservation__container">
+      <span class="section-label">ご予約方法</span>
+      <h2 class="section-title">ご予約は2通り</h2>
+
+      <div class="reservation__cards">
+        <div class="reservation-card reservation-card--line">
+          <div class="reservation-card__badge">おすすめ</div>
+          <div class="reservation-card__header">
+            <span class="reservation-card__timing">2日前まで</span>
+            <h3 class="reservation-card__title">LINE予約</h3>
+          </div>
+          <p class="reservation-card__desc">24時間いつでも予約可能。<br>スタンプも貯まってお得です。</p>
+          <a href="https://page.line.me/750yomcm?openQrModal=true" class="reservation-card__btn" data-cv="line">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+            </svg>
+            LINEで予約する
+          </a>
         </div>
-        <div class="step">
-          <span class="step-number">2</span>
-          <h3 class="step-title">ステップ2</h3>
-          <p class="step-description">説明をここに</p>
-        </div>
-        <div class="step">
-          <span class="step-number">3</span>
-          <h3 class="step-title">ステップ3</h3>
-          <p class="step-description">説明をここに</p>
+
+        <div class="reservation-card reservation-card--phone">
+          <div class="reservation-card__header">
+            <span class="reservation-card__timing">前日・当日</span>
+            <h3 class="reservation-card__title">電話予約</h3>
+          </div>
+          <p class="reservation-card__desc">お急ぎの場合は<br>お電話でどうぞ。</p>
+          <a href="tel:077-516-4013" class="reservation-card__btn reservation-card__btn--phone" data-cv="tel">
+            <i data-lucide="phone"></i>
+            077-516-4013
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- お客様の声 -->
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="section-title">お客様の声</h2>
-      <div class="testimonial-list">
-        <div class="testimonial">
-          <p class="testimonial-text">「感想をここに入れます」</p>
-          <p class="testimonial-author">30代 女性</p>
+  <!-- Reasons -->
+  <section class="reasons">
+    <div class="reasons__container">
+      <span class="section-label">選ばれる理由</span>
+      <h2 class="section-title">うな松の<br class="sp-only">3つの強み</h2>
+
+      <div class="reasons__list">
+        <article class="reason">
+          <div class="reason__image">
+            <img src="images/feature3.jpg" alt="肉厚でふっくらのうな重" loading="lazy">
+          </div>
+          <div class="reason__content">
+            <span class="reason__number">01</span>
+            <h3 class="reason__title">見た目で分かる<br>満足感</h3>
+            <p class="reason__text">一目で違いが分かる「太丸鰻」を使用。<br>肉厚でふっくら、食べ応え抜群です。</p>
+          </div>
+        </article>
+
+        <article class="reason reason--reverse">
+          <div class="reason__image">
+            <img src="images/menu2.png" alt="テイクアウトうな重" loading="lazy">
+          </div>
+          <div class="reason__content">
+            <span class="reason__number">02</span>
+            <h3 class="reason__title">2,000円台からの<br>本格うな重</h3>
+            <p class="reason__text">日常で選べる贅沢を。<br>会議用など大口注文は割引もございます。</p>
+          </div>
+        </article>
+
+        <article class="reason">
+          <div class="reason__image">
+            <img src="images/feature1.jpg" alt="厳選ニホンウナギ" loading="lazy">
+          </div>
+          <div class="reason__content">
+            <span class="reason__number">03</span>
+            <h3 class="reason__title">家族に出せる<br>安心の素材</h3>
+            <p class="reason__text">厳選ニホンウナギのみを使用。<br>お子様からご年配の方まで、安心してお召し上がりいただけます。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="menu__container">
+      <span class="section-label">お品書き</span>
+      <h2 class="section-title">テイクアウトメニュー</h2>
+
+      <div class="menu__grid">
+        <article class="menu-item">
+          <div class="menu-item__image">
+            <img src="images/menu2.png" alt="うな重（梅）" loading="lazy">
+          </div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h3 class="menu-item__name">うな重（梅）</h3>
+              <span class="menu-item__price">¥2,000<small>（税込）</small></span>
+            </div>
+            <p class="menu-item__desc">太丸鰻 半尾</p>
+          </div>
+        </article>
+
+        <article class="menu-item menu-item--featured">
+          <div class="menu-item__badge">人気No.1</div>
+          <div class="menu-item__image">
+            <img src="images/menu3.png" alt="うな重（竹）" loading="lazy">
+          </div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h3 class="menu-item__name">うな重（竹）</h3>
+              <span class="menu-item__price">¥2,700<small>（税込）</small></span>
+            </div>
+            <p class="menu-item__desc">太丸鰻 1.5倍</p>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-item__image">
+            <img src="images/menu1.jpg" alt="うな重（松）" loading="lazy">
+          </div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h3 class="menu-item__name">うな重（松）</h3>
+              <span class="menu-item__price">¥3,300<small>（税込）</small></span>
+            </div>
+            <p class="menu-item__desc">太丸鰻 1尾</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu__notes">
+        <p>※ ニホンウナギ使用</p>
+        <p>※ 八代目儀兵衛ブレンド白飯</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flow -->
+  <section class="flow">
+    <div class="flow__container">
+      <span class="section-label">ご注文の流れ</span>
+      <h2 class="section-title">かんたん3ステップ</h2>
+
+      <div class="flow__steps">
+        <div class="flow-step">
+          <div class="flow-step__number">1</div>
+          <div class="flow-step__icon">
+            <i data-lucide="calendar-plus"></i>
+          </div>
+          <h3 class="flow-step__title">ご予約</h3>
+          <p class="flow-step__text">LINEまたは電話で<br>ご予約ください</p>
         </div>
-        <div class="testimonial">
-          <p class="testimonial-text">「感想をここに入れます」</p>
-          <p class="testimonial-author">40代 男性</p>
+
+        <div class="flow__arrow">
+          <i data-lucide="chevron-right"></i>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-step__number">2</div>
+          <div class="flow-step__icon">
+            <i data-lucide="store"></i>
+          </div>
+          <h3 class="flow-step__title">ご来店</h3>
+          <p class="flow-step__text">11:00〜14:00の間に<br>ご来店ください</p>
+        </div>
+
+        <div class="flow__arrow">
+          <i data-lucide="chevron-right"></i>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-step__number">3</div>
+          <div class="flow-step__icon">
+            <i data-lucide="package-check"></i>
+          </div>
+          <h3 class="flow-step__title">お受け取り</h3>
+          <p class="flow-step__text">待ち時間なしで<br>お渡しします</p>
         </div>
       </div>
     </div>
@@ -79,47 +297,139 @@
 
   <!-- FAQ -->
   <section class="faq">
-    <div class="container">
-      <h2 class="section-title">よくあるご質問</h2>
-      <div class="faq-list">
+    <div class="faq__container">
+      <span class="section-label">よくあるご質問</span>
+      <h2 class="section-title">FAQ</h2>
+
+      <div class="faq__list">
         <details class="faq-item">
-          <summary class="faq-question">質問1をここに</summary>
-          <p class="faq-answer">回答をここに入れます。</p>
+          <summary class="faq-item__question">
+            <span>冷めても美味しいですか？</span>
+            <span class="faq-item__icon"></span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>はい、冷めても美味しくお召し上がりいただけます。タレの染み込んだご飯と鰻の旨味をお楽しみください。温め直す場合は、電子レンジで軽く温めていただくとより美味しくお召し上がりいただけます。</p>
+          </div>
         </details>
+
         <details class="faq-item">
-          <summary class="faq-question">質問2をここに</summary>
-          <p class="faq-answer">回答をここに入れます。</p>
+          <summary class="faq-item__question">
+            <span>受け取り時間は指定できますか？</span>
+            <span class="faq-item__icon"></span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>はい、11:00〜14:00の間でご希望の時間をご指定いただけます。ご予約時にお申し付けください。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>支払い方法は何がありますか？</span>
+            <span class="faq-item__icon"></span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>現金のほか、各種クレジットカード、電子マネー（PayPay、交通系IC等）に対応しております。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>大口注文は可能ですか？</span>
+            <span class="faq-item__icon"></span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>はい、会議用のお弁当など大口注文も承っております。10個以上のご注文で割引もございます。詳しくはLINEまたはお電話でお問い合わせください。</p>
+          </div>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta" id="cta">
-    <div class="container">
-      <h2 class="cta-title">今すぐお申し込みください</h2>
-      <p class="cta-description">お気軽にお問い合わせください</p>
-      <a href="https://example.com/form" class="btn btn-primary btn-large" data-cv="cta-click">
-        申し込みフォームへ
-      </a>
-      <a href="tel:090-0000-0000" class="btn btn-secondary" data-cv="tel">
-        電話で問い合わせ
-      </a>
+  <!-- Shop Info -->
+  <section class="shop-info">
+    <div class="shop-info__container">
+      <span class="section-label">店舗情報</span>
+      <h2 class="section-title">アクセス</h2>
+
+      <div class="shop-info__content">
+        <div class="shop-info__map">
+          <iframe
+            src="https://maps.google.com/maps?q=%E8%BF%91%E6%B1%9F%E9%B0%BB%E5%87%A6+%E3%81%86%E3%81%AA%E6%9D%BE&t=m&z=17&output=embed&iwloc=near"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="shop-info__details">
+          <dl class="shop-info__list">
+            <div class="shop-info__item">
+              <dt>店名</dt>
+              <dd>近江鰻処 うな松</dd>
+            </div>
+            <div class="shop-info__item">
+              <dt>住所</dt>
+              <dd>〒525-0055<br>滋賀県草津市野路8丁目22-6</dd>
+            </div>
+            <div class="shop-info__item">
+              <dt>営業時間</dt>
+              <dd>11:00〜14:00（L.O. 13:30）</dd>
+            </div>
+            <div class="shop-info__item">
+              <dt>定休日</dt>
+              <dd>不定休（LINEでお知らせ）</dd>
+            </div>
+            <div class="shop-info__item">
+              <dt>駐車場</dt>
+              <dd>あり（店舗前）</dd>
+            </div>
+            <div class="shop-info__item">
+              <dt>お支払い</dt>
+              <dd>現金 / クレジット / 電子マネー</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- フッター -->
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="final-cta__container">
+      <div class="final-cta__content">
+        <p class="final-cta__lead">今日の食卓に、</p>
+        <p class="final-cta__main">専門店の鰻を。</p>
+      </div>
+
+      <div class="final-cta__buttons">
+        <a href="https://page.line.me/750yomcm?openQrModal=true" class="final-cta__btn final-cta__btn--line" data-cv="line">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+          </svg>
+          LINE友だち登録
+        </a>
+        <a href="tel:077-516-4013" class="final-cta__btn final-cta__btn--phone" data-cv="tel">
+          <i data-lucide="phone"></i>
+          077-516-4013
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p class="copyright">&copy; 2025 会社名. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="/privacy">プライバシーポリシー</a>
-        <a href="/terms">利用規約</a>
-        <a href="/tokusho">特定商取引法に基づく表記</a>
-      </nav>
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="images/unamatsu_logo_wh.png" alt="近江鰻処 うな松" class="footer__logo-img">
+      </div>
+      <p class="footer__copyright">&copy; 2024 近江鰻処 うな松 All Rights Reserved.</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

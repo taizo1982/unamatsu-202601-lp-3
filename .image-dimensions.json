@@ -1,0 +1,34 @@
+{
+  "design/images/feature1.jpg": {
+    "width": 991,
+    "height": 635
+  },
+  "design/images/feature3.jpg": {
+    "width": 924,
+    "height": 1055
+  },
+  "design/images/menu1.jpg": {
+    "width": 1920,
+    "height": 863
+  },
+  "design/images/menu2.png": {
+    "width": 784,
+    "height": 832
+  },
+  "design/images/menu3.png": {
+    "width": 935,
+    "height": 603
+  },
+  "design/images/unajyu5.jpeg": {
+    "width": 1920,
+    "height": 1280
+  },
+  "design/images/unamatsu_logo.png": {
+    "width": 204,
+    "height": 378
+  },
+  "design/images/unamatsu_logo_wh.png": {
+    "width": 204,
+    "height": 378
+  }
+}
