@@ -19,9 +19,17 @@
     "width": 935,
     "height": 603
   },
+  "design/images/og-image.jpg": {
+    "width": 1200,
+    "height": 630
+  },
   "design/images/unajyu5.jpeg": {
     "width": 1920,
     "height": 1280
+  },
+  "design/images/unamatsu_fav.png": {
+    "width": 64,
+    "height": 64
   },
   "design/images/unamatsu_logo.png": {
     "width": 204,
@@ -30,5 +38,13 @@
   "design/images/unamatsu_logo_wh.png": {
     "width": 204,
     "height": 378
+  },
+  "design/images/unamatsu_logo_yoko.png": {
+    "width": 267,
+    "height": 45
+  },
+  "design/images/unamatsu_logo_yoko_wh.png": {
+    "width": 267,
+    "height": 45
   }
 }
