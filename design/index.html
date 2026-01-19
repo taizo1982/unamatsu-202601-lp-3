@@ -6,6 +6,17 @@
   <title>近江鰻処 うな松｜テイクアウト予約</title>
   <meta name="description" content="南草津で本格うな重をテイクアウト。厳選ニホンウナギと八代目儀兵衛ブレンド米を使用した、専門店クオリティのうな重をご自宅で。">
 
+  <!-- Favicon -->
+  <link rel="icon" href="images/unamatsu_fav.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/unamatsu_fav.png">
+
+  <!-- OGP -->
+  <meta property="og:title" content="近江鰻処 うな松｜テイクアウト予約">
+  <meta property="og:description" content="南草津で本格うな重をテイクアウト。厳選ニホンウナギと八代目儀兵衛ブレンド米を使用した、専門店クオリティのうな重をご自宅で。">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +47,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="#" class="header__logo">
-        <img src="images/unamatsu_logo_wh.png" alt="近江鰻処 うな松" class="header__logo-img">
+        <img src="images/unamatsu_logo_yoko_wh.png" alt="近江鰻処 うな松" class="header__logo-img">
       </a>
       <a href="https://page.line.me/750yomcm?openQrModal=true" class="header__cta" data-cv="line" aria-label="LINE予約">
         <svg class="header__cta-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -55,7 +66,6 @@
     <div class="hero__content">
       <div class="hero__vertical-text">TAKEOUT</div>
       <div class="hero__main">
-        <p class="hero__label">テイクアウト専門</p>
         <h1 class="hero__title">
           <span class="hero__title-line">南草津で、</span>
           <span class="hero__title-line">ちゃんと旨い鰻を、</span>
@@ -119,7 +129,7 @@
             <i data-lucide="sparkles"></i>
           </div>
           <h3 class="benefit-card__title">スタンプ特典</h3>
-          <p class="benefit-card__text">5個貯めると無料グレードアップ<br><small>梅→竹、竹→松</small></p>
+          <p class="benefit-card__text">5個貯めると無料グレードアップ<br><small>梅→竹 / 竹→松</small></p>
         </div>
       </div>
 
@@ -157,7 +167,7 @@
             <span class="reservation-card__timing">前日・当日</span>
             <h3 class="reservation-card__title">電話予約</h3>
           </div>
-          <p class="reservation-card__desc">お急ぎの場合は<br>お電話でどうぞ。</p>
+          <p class="reservation-card__desc">お急ぎの場合は<br>お電話でどうぞ</p>
           <a href="tel:077-516-4013" class="reservation-card__btn reservation-card__btn--phone" data-cv="tel">
             <i data-lucide="phone"></i>
             077-516-4013
@@ -171,7 +181,7 @@
   <section class="reasons">
     <div class="reasons__container">
       <span class="section-label">選ばれる理由</span>
-      <h2 class="section-title">うな松の<br class="sp-only">3つの強み</h2>
+      <h2 class="section-title">うな松が<br class="sp-only">選ばれる理由</h2>
 
       <div class="reasons__list">
         <article class="reason">
@@ -180,7 +190,7 @@
           </div>
           <div class="reason__content">
             <span class="reason__number">01</span>
-            <h3 class="reason__title">見た目で分かる<br>満足感</h3>
+            <h3 class="reason__title">見た目で分かる<br>圧倒的な満足感</h3>
             <p class="reason__text">一目で違いが分かる「太丸鰻」を使用。<br>肉厚でふっくら、食べ応え抜群です。</p>
           </div>
         </article>
@@ -191,7 +201,7 @@
           </div>
           <div class="reason__content">
             <span class="reason__number">02</span>
-            <h3 class="reason__title">2,000円台からの<br>本格うな重</h3>
+            <h3 class="reason__title">2,000円台から<br>本格うな重</h3>
             <p class="reason__text">日常で選べる贅沢を。<br>会議用など大口注文は割引もございます。</p>
           </div>
         </article>
@@ -202,7 +212,7 @@
           </div>
           <div class="reason__content">
             <span class="reason__number">03</span>
-            <h3 class="reason__title">家族に出せる<br>安心の素材</h3>
+            <h3 class="reason__title">家族に出せる<br>安心素材</h3>
             <p class="reason__text">厳選ニホンウナギのみを使用。<br>お子様からご年配の方まで、安心してお召し上がりいただけます。</p>
           </div>
         </article>
@@ -216,44 +226,53 @@
       <span class="section-label">お品書き</span>
       <h2 class="section-title">テイクアウトメニュー</h2>
 
-      <div class="menu__grid">
-        <article class="menu-item">
-          <div class="menu-item__image">
-            <img src="images/menu2.png" alt="うな重（梅）" loading="lazy">
-          </div>
-          <div class="menu-item__body">
-            <div class="menu-item__header">
-              <h3 class="menu-item__name">うな重（梅）</h3>
-              <span class="menu-item__price">¥2,000<small>（税込）</small></span>
+      <div class="menu-showcase">
+        <article class="menu-showcase__item">
+          <div class="menu-showcase__inner">
+            <div class="menu-showcase__decoration"></div>
+            <div class="menu-showcase__kanji">梅</div>
+            <div class="menu-showcase__details">
+              <span class="menu-showcase__label">うな重</span>
+              <span class="menu-showcase__amount">太丸鰻 半尾</span>
             </div>
-            <p class="menu-item__desc">太丸鰻 半尾</p>
+            <div class="menu-showcase__price-wrap">
+              <span class="menu-showcase__price">2,000</span>
+              <span class="menu-showcase__tax">円（税込）</span>
+            </div>
+            <p class="menu-showcase__desc">初めての方や軽めに<br>楽しみたい方におすすめ。<br>肉厚な鰻の旨みを堪能できます。</p>
           </div>
         </article>
 
-        <article class="menu-item menu-item--featured">
-          <div class="menu-item__badge">人気No.1</div>
-          <div class="menu-item__image">
-            <img src="images/menu3.png" alt="うな重（竹）" loading="lazy">
-          </div>
-          <div class="menu-item__body">
-            <div class="menu-item__header">
-              <h3 class="menu-item__name">うな重（竹）</h3>
-              <span class="menu-item__price">¥2,700<small>（税込）</small></span>
+        <article class="menu-showcase__item menu-showcase__item--main">
+          <div class="menu-showcase__badge">人気No.1</div>
+          <div class="menu-showcase__inner">
+            <div class="menu-showcase__decoration"></div>
+            <div class="menu-showcase__kanji">竹</div>
+            <div class="menu-showcase__details">
+              <span class="menu-showcase__label">うな重</span>
+              <span class="menu-showcase__amount">太丸鰻 1.5倍</span>
             </div>
-            <p class="menu-item__desc">太丸鰻 1.5倍</p>
+            <div class="menu-showcase__price-wrap">
+              <span class="menu-showcase__price">2,700</span>
+              <span class="menu-showcase__tax">円（税込）</span>
+            </div>
+            <p class="menu-showcase__desc">迷ったらこれ。<br>満足感と価格のバランスが絶妙。<br>リピーター様に選ばれています。</p>
           </div>
         </article>
 
-        <article class="menu-item">
-          <div class="menu-item__image">
-            <img src="images/menu1.jpg" alt="うな重（松）" loading="lazy">
-          </div>
-          <div class="menu-item__body">
-            <div class="menu-item__header">
-              <h3 class="menu-item__name">うな重（松）</h3>
-              <span class="menu-item__price">¥3,300<small>（税込）</small></span>
+        <article class="menu-showcase__item">
+          <div class="menu-showcase__inner">
+            <div class="menu-showcase__decoration"></div>
+            <div class="menu-showcase__kanji">松</div>
+            <div class="menu-showcase__details">
+              <span class="menu-showcase__label">うな重</span>
+              <span class="menu-showcase__amount">太丸鰻 1尾</span>
             </div>
-            <p class="menu-item__desc">太丸鰻 1尾</p>
+            <div class="menu-showcase__price-wrap">
+              <span class="menu-showcase__price">3,300</span>
+              <span class="menu-showcase__tax">円（税込）</span>
+            </div>
+            <p class="menu-showcase__desc">贅沢に丸ごと一尾。<br>特別な日のご褒美や<br>大切な方への手土産に。</p>
           </div>
         </article>
       </div>
@@ -436,7 +455,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo">
-        <img src="images/unamatsu_logo_wh.png" alt="近江鰻処 うな松" class="footer__logo-img">
+        <img src="images/unamatsu_logo_yoko_wh.png" alt="近江鰻処 うな松" class="footer__logo-img">
       </div>
       <p class="footer__copyright">&copy; 2024 近江鰻処 うな松 All Rights Reserved.</p>
     </div>
