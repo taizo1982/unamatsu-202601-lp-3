@@ -227,3 +227,23 @@
     init();
   }
 })();
+
+
+/**
+ * コンバージョン追跡コード（自動生成）
+ */
+(function() {
+  // data-cv属性を持つ要素のクリックを追跡
+  document.querySelectorAll('[data-cv]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var cvType = this.dataset.cv;
+      var label = this.textContent || this.innerText;
+
+      // Meta Pixel
+      if (typeof fbq === 'function') {
+        var metaEvent = cvType === 'tel' ? 'Contact' : 'Lead';
+        fbq('track', metaEvent);
+      }
+    });
+  });
+})();
