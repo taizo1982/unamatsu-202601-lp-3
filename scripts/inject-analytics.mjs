@@ -2,7 +2,7 @@
  * LP Template - 広告タグ注入スクリプト
  *
  * design/index.html に .env の設定から広告タグを注入
- * GA4, Google Ads, Meta Pixel, LINE Tag, Yahoo Tag 対応
+ * GA4, Google Ads, Meta Pixel, LINE Tag, Yahoo Tag, Microsoft Clarity 対応
  */
 
 import fs from "node:fs/promises";
@@ -75,6 +75,19 @@ function generateAnalyticsTags(env) {
 </script>`);
   }
 
+  // Microsoft Clarity
+  if (env.CLARITY_PROJECT_ID) {
+    tags.push(`
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "${env.CLARITY_PROJECT_ID}");
+</script>`);
+  }
+
   return tags.join("\n");
 }
 
@@ -88,6 +101,7 @@ async function injectAnalytics(targetPath) {
   html = html.replace(/<!-- Meta Pixel -->[\s\S]*?<\/noscript>/g, "");
   html = html.replace(/<!-- LINE Tag -->[\s\S]*?<\/noscript>/g, "");
   html = html.replace(/<!-- Yahoo Tag -->[\s\S]*?<\/script>/g, "");
+  html = html.replace(/<!-- Microsoft Clarity -->[\s\S]*?<\/script>/g, "");
 
   // 広告タグを生成
   const analyticsTags = generateAnalyticsTags(env);
@@ -103,6 +117,7 @@ async function injectAnalytics(targetPath) {
   if (env.META_PIXEL_ID) enabledTags.push("Meta Pixel");
   if (env.LINE_TAG_ID) enabledTags.push("LINE Tag");
   if (env.YAHOO_RETARGETING_ID) enabledTags.push("Yahoo Tag");
+  if (env.CLARITY_PROJECT_ID) enabledTags.push("Microsoft Clarity");
 
   if (enabledTags.length > 0) {
     console.log(`✓ 広告タグを注入しました: ${enabledTags.join(", ")}`);
